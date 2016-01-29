@@ -4,11 +4,103 @@
     <meta charset="utf-8">
     <title>Untitled</title>
     
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/superhero/bootstrap.min.css">
     
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
+    <div class="container">
+
+<!-- Start of Row 1 -->
+      <div class="row">
+<!-- Start of Weather Block -->
+        <div class="col-md-4">
+          <h3>The current weather is…</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <h5 id="weather-now"></h5>
+            </div>
+            <div class="col-md-8">
+              <img class="img-responsive" src="img/clear.svg" alt="clear" style="height: 50px;">
+            </div>
+          </div>
+          <h3>The current forecast is…</h3>
+          <p id="weather-summary"></p>
+        </div>
+<!-- End of Weather Block -->
+
+<!-- Start of Clock Block -->
+        <div class="col-md-4">
+          <h3 class="text-center">The time is…</h3>
+          <h1 class="text-center">09:41</h1>
+        </div>
+<!-- End of Clock Block -->
+
+<!-- Start of Step Count Block -->
+        <div class="col-md-4">
+          <h3 class="text-center">Today's Step Count is…</h3>
+          <h1 class="text-center">9,863</h1>
+        </div>
+<!-- End of Step Count Block -->
+      </div>
+<!-- End of Row 1 -->
+
+<br>
+
+<!-- Start of Row 2 -->
+      <div class="row">
+<!-- Start of Stock Block -->
+        <div class="col-md-4">
+          <h3 class="text-center">$$$ Stocks $$$</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Stock</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="all-stocks">
+            </tbody>
+          </table>
+        </div>
+<!-- End of Stock Block -->        
+
+<!-- Start of Todo Block -->
+        <div class="col-md-4">
+          <h3 class="text-center">To Dos</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="all-todos">
+            </tbody>
+          </table>
+        </div>
+<!-- End of Todo Block -->
+
+<!-- Start of Active Git Repos Block -->
+        <div class="col-md-4">
+          <h3 class="text-center">Recent Commits</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th># of Commits</th>
+              </tr>
+            </thead>
+            <tbody id="all-gits">
+            </tbody>
+          </table>
+        </div>
+<!-- End of Active Git Repos  Block -->
+        
+      </div>
+<!-- End of Row 2 -->
+    
+    </div>
     
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     
